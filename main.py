@@ -26,13 +26,7 @@ main_menu()
 
 # welcome statment 
 def welcome_statment():
-  name = input("Please Enter Your name: ")
-  age  = int(input("Please Enter your age: ")
-  print("Hello, Welcome to My Math quiz 2022, 
-  print("please type in answer if the ai ask you to and") 
-  print("please read the rules, note that this is quiz is")
-  print("purely made for year 11 students so if you are")
-  print("from year 10 or below and/or above you") print("willeither find it difficult or easy, thanks and have fun")
+
 
   
 
