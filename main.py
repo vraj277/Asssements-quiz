@@ -11,7 +11,7 @@ def main_menu():
   choice = input("| Enter 1, 2, or 3: ")
   
   if choice == "1":
-    welcome_statment()
+    welcome_statement()
   elif choice == "3":
     print("Thanks for Playing :) !")
     quit()
@@ -25,18 +25,7 @@ def main_menu():
 main_menu()
 
 # welcome statment 
-def welcome_statment():
-
-
+def welcome_statement():
+  print("Hello, Welcome to My Math quiz 2022, please type in answer if the ai ask you to and please read the rules, note that this is quiz is purely made for year 11 students so if you are from year 10 or below and/or above you will either find it difficult or easy, thanks and have fun.")
   
 
-             
-  
-
-
-
-
-# def play_MCQ_quiz():
-
-# Quiz Questions 
-#def get_MCQ_statements():
