@@ -1,12 +1,46 @@
+import random
+
+def get_MCQ_statements():
+  questions = { '| Question one  \n| 2x(3x+4) \n| a: 6x^2+8x \n| b: 5x^2+8x\n| c: 5x+8x\n' : 'a' , '| Question 2\n| 9x(12x+18) \n a: 21x^2+27x a\n b: 108x^2+162x\n c: 9x+30x \n' :  'b' , 'Question 3 \n a: answer a\n b: answer b\n c: answer c \n' : 'c' }
+
+  return questions
+
+
 def play_MCQ_quiz():
+
+  MCQ_statements = get_MCQ_statements()
+
+  
+
+  score = 0
+
+  for Q in MCQ_statements:
+      print("|*******************************|")
+      print(Q )
+      user_answer = input("| Enter A, B or C: ")
+      print("|*******************************|")
+      if user_answer == Q:
+          print("|         Correct!              | ")
+          score =  score + 1
+      else:
+          print("|        Incorrect :(           | ")
+          
+  print("Your Final Score is:" + str(score))
+  
+
+
+
+def welcome_MCQ_quiz():
+  
   print("|*******************************|")
   name_1 = input("|* Please enter your name: |")
-  print("|*Hello {}, Welcome to My Math   |\n| quiz 2022 please type in      |\n| answer if the AI ask you to   |\n| and please read the rules,note|\n| that this is quiz is purely   |\n| made for year 11 students so  |\n| if you are from year 10 or    |\n| below and/or above you will   |\n| either find it difficult or   |\n| easy, thanks and have fun.    |".format(name_1))
+  print("|*Hello {}, Welcome to My       |\n| Math quiz 2022 please type in |\n| answer if the AI ask you to   |\n| and please read the rules,note|\n| that this is quiz is purely   |\n| made for year 11 students so  |\n| if you are from year 10 or    |\n| below and/or above you will   |\n| either find it difficult or   |\n| easy, thanks and have fun.    |".format(name_1))
+  print("|*******************************|")
+
+  play_MCQ_quiz()
 
 
-
-
-
+  
 
 
 def main_menu():
@@ -22,7 +56,7 @@ def main_menu():
   choice = input("| Enter 1, 2, or 3: ")
   
   if choice == "1":
-      play_MCQ_quiz()
+      welcome_MCQ_quiz()
   elif choice == "3":
     print("Thanks for Playing :) !")
     quit()
@@ -32,10 +66,13 @@ def main_menu():
     print("| 2. only calculators are       |")
     print("|    allowed if necessary       |")
     print("| 3. Have Fun!!                 |")
+    welcome_MCQ_quiz()
 
 main_menu()
+play_MCQ_quiz()
 
-# welcome statment 
+  
+  
 
 
 
