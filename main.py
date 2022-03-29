@@ -1,21 +1,13 @@
 import random
-
-questions = { '| Question one  \n| 2x(3x+4) \n| a: 6x^2+8x \n| b: 5x^2+8x\n| c: 5x+8x\n' : 'a' , '| Question 2\n| 9x(12x+18) \n a: 21x^2+27x a\n b: 108x^2+162x\n c: 9x+30x \n' :  'b' , 'Question 3 \n a: answer a\n b: answer b\n c: answer c \n' : 'c' }
-
-  
-
+questions = {'| Question one  \n| 2x(3x+4)b \n| a: 6x^2+8x \n| b: 5x^2+8x\n| c: 5x+8x\n' : 'a' , '| Question 2\n| 9x(12x+18) \n a: 21x^2+27x a\n b: 108x^2+162x\n c: 9x+30x \n' :  'b' , 'Question 3 \n a: answer a\n b: answer b\n c: answer c \n' : 'c' }
 
 def play_MCQ_quiz():
-
-  
-
-  
-
+ 
   score = 0
 #add error handling
   for key in questions.keys():
       print("|*******************************|")
-      print(key )
+      print( key )
       user_answer = input("Enter A, B or C:").lower().strip()
       print("|*******************************|")
       if questions.get(key) == user_answer:
@@ -26,7 +18,7 @@ def play_MCQ_quiz():
       
   print("| Your Final Score is: " + str(score))
       
-
+   
 
 
 def welcome_MCQ_quiz():
