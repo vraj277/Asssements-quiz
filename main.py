@@ -3,7 +3,21 @@
 def welcome_MCQ_quiz():
     
   print("|*******************************|")
-  name_1 = input("|* Please enter your name: |")
+
+  
+  while True:
+    try:
+        name_1 = input("|* Please enter your name: |")
+        if name_1.isalpha():
+          break
+        else:
+          print("| Please enter a name with letters only, and dont leave empty |")
+          
+      
+    except ValueError:
+        print("please enter a name with letters only, and dont leave empty")
+
+  
   print("|*Hello {}, Welcome to My       |\n| Math quiz 2022 please type in |\n| answer if the AI ask you to   |\n| and please read the rules,note|\n| that this is quiz is purely   |\n| made for year 11 students so  |\n| if you are from year 10 or    |\n| below and/or above you will   |\n| either find it difficult or   |\n| easy, thanks and have fun.    |".format(name_1))
   print( "| \033[4mNote\033[0m -'^' = to the power of   |")
   
